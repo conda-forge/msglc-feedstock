@@ -12,7 +12,7 @@ source:
   sha256: e173f561e3aaa0a868d0c349bbc7f25dc79a5e58a150e44b6ed9c35482b95f85
 
 build:
-  number: 0
+  number: 1
   skip: match(python, "<3.10")
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
@@ -46,7 +46,7 @@ tests:
 about:
   summary: binary json representation (msgpack or cbor) with lazy/partial loading containers
   license: GPL-3.0-only
-  license_file: 
+  license_file:
     - LICENSE
     - THIRDPARTY.yml
   homepage: https://github.com/TLCFEM/msglc
