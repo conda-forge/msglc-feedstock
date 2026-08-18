@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 260423
+  version: "260818"
 
 package:
   name: msglc
@@ -9,11 +9,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/msglc/msglc-${{ version }}.tar.gz
-  sha256: e173f561e3aaa0a868d0c349bbc7f25dc79a5e58a150e44b6ed9c35482b95f85
+  sha256: f0f0572291f2440f6aba6fc3c04660aa68709b3d4ba39d17b420668ee1b47e3c
 
 build:
-  number: 1
-  skip: match(python, "<3.10")
+  number: 0
+  skip: match(python, "<3.11")
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
