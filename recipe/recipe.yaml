@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "260819"
+  version: "260821"
 
 package:
   name: msglc
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/msglc/msglc-${{ version }}.tar.gz
-  sha256: e0d30b8d4efd3d6a05a89718346b24e34b3835797919c2fd0e235e2d1710c36d
+  sha256: e430bb0eeaa70606e7e3796bdf911168e91913dfa30c123174b86149c60b071e
 
 build:
   number: 0
